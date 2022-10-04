@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		811FD70B28E8FEB4000CCFB9 /* ManagerTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811FD70A28E8FEB4000CCFB9 /* ManagerTask.swift */; };
+		813AA8D428EA4017001BFB58 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 813AA8D328EA4017001BFB58 /* Realm */; };
+		813AA8D628EA4017001BFB58 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 813AA8D528EA4017001BFB58 /* RealmSwift */; };
+		8149247D28D915FC0070D4F9 /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149247C28D915FC0070D4F9 /* Factories.swift */; };
+		81B0968828D26ED700697C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B0968728D26ED700697C92 /* AppDelegate.swift */; };
+		81B0968A28D26ED700697C92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B0968928D26ED700697C92 /* SceneDelegate.swift */; };
+		81B0968C28D26ED700697C92 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B0968B28D26ED700697C92 /* TaskViewController.swift */; };
+		81B0968F28D26ED700697C92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81B0968D28D26ED700697C92 /* Main.storyboard */; };
+		81B0969128D26ED800697C92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B0969028D26ED800697C92 /* Assets.xcassets */; };
+		81B0969428D26ED800697C92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81B0969228D26ED800697C92 /* LaunchScreen.storyboard */; };
+		81B7621028E6493B0063029A /* Inter-VariableFont_slnt,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81B7620328E6493B0063029A /* Inter-VariableFont_slnt,wght.ttf */; };
+		81B7621128E6493B0063029A /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81B7620528E6493B0063029A /* Inter-Medium.ttf */; };
+		81B7621228E6493B0063029A /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81B7620628E6493B0063029A /* Inter-Light.ttf */; };
+		81B7621328E6493B0063029A /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81B7620728E6493B0063029A /* Inter-Thin.ttf */; };
+		81B7621428E6493B0063029A /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81B7620828E6493B0063029A /* Inter-Bold.ttf */; };
+		81B7621528E6493B0063029A /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81B7620928E6493B0063029A /* Inter-Regular.ttf */; };
+		81B7621628E6493B0063029A /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81B7620A28E6493B0063029A /* Inter-ExtraBold.ttf */; };
+		81B7621728E6493B0063029A /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81B7620B28E6493B0063029A /* Inter-ExtraLight.ttf */; };
+		81B7621828E6493B0063029A /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81B7620C28E6493B0063029A /* Inter-Black.ttf */; };
+		81B7621928E6493B0063029A /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81B7620D28E6493B0063029A /* Inter-SemiBold.ttf */; };
+		81B7621A28E6493B0063029A /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 81B7620E28E6493B0063029A /* OFL.txt */; };
+		81B7621B28E6493B0063029A /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 81B7620F28E6493B0063029A /* README.txt */; };
+		81D0F69528E9C29200C5A8B9 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0F69428E9C29200C5A8B9 /* Task.swift */; };
+		81D0F69728E9C56300C5A8B9 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0F69628E9C56300C5A8B9 /* ExtensionViewController.swift */; };
+		81E35FE728D5120E00C24B27 /* TasksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E35FE528D5120E00C24B27 /* TasksTableViewCell.swift */; };
+		81E35FE828D5120E00C24B27 /* TasksTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E35FE628D5120E00C24B27 /* TasksTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		811FD70A28E8FEB4000CCFB9 /* ManagerTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerTask.swift; sourceTree = "<group>"; };
+		8149247C28D915FC0070D4F9 /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
+		81B0968428D26ED700697C92 /* Todo With Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo With Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81B0968728D26ED700697C92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81B0968928D26ED700697C92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		81B0968B28D26ED700697C92 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		81B0968E28D26ED700697C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81B0969028D26ED800697C92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81B0969328D26ED800697C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81B0969528D26ED800697C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81B7620328E6493B0063029A /* Inter-VariableFont_slnt,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_slnt,wght.ttf"; sourceTree = "<group>"; };
+		81B7620528E6493B0063029A /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		81B7620628E6493B0063029A /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		81B7620728E6493B0063029A /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		81B7620828E6493B0063029A /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		81B7620928E6493B0063029A /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		81B7620A28E6493B0063029A /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		81B7620B28E6493B0063029A /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		81B7620C28E6493B0063029A /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		81B7620D28E6493B0063029A /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		81B7620E28E6493B0063029A /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		81B7620F28E6493B0063029A /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		81D0F69428E9C29200C5A8B9 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		81D0F69628E9C56300C5A8B9 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
+		81E35FE528D5120E00C24B27 /* TasksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewCell.swift; sourceTree = "<group>"; };
+		81E35FE628D5120E00C24B27 /* TasksTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TasksTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81B0968128D26ED700697C92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813AA8D628EA4017001BFB58 /* RealmSwift in Frameworks */,
+				813AA8D428EA4017001BFB58 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		814C4A5928D5255C0039C50C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81B0968D28D26ED700697C92 /* Main.storyboard */,
+				81B0969228D26ED800697C92 /* LaunchScreen.storyboard */,
+				81E35FE628D5120E00C24B27 /* TasksTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		81B0967B28D26ED700697C92 = {
+			isa = PBXGroup;
+			children = (
+				81B0968628D26ED700697C92 /* Todo With Calendar */,
+				81B0968528D26ED700697C92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81B0968528D26ED700697C92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81B0968428D26ED700697C92 /* Todo With Calendar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81B0968628D26ED700697C92 /* Todo With Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				81B0968728D26ED700697C92 /* AppDelegate.swift */,
+				81B0968928D26ED700697C92 /* SceneDelegate.swift */,
+				81B7620228E6493B0063029A /* Fonts */,
+				81D0F69228E9C10900C5A8B9 /* Model */,
+				814C4A5928D5255C0039C50C /* View */,
+				81B0969028D26ED800697C92 /* Assets.xcassets */,
+				81D0F69328E9C13200C5A8B9 /* Controlers */,
+				81B0969528D26ED800697C92 /* Info.plist */,
+			);
+			path = "Todo With Calendar";
+			sourceTree = "<group>";
+		};
+		81B7620228E6493B0063029A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				81B7620528E6493B0063029A /* Inter-Medium.ttf */,
+				81B7620628E6493B0063029A /* Inter-Light.ttf */,
+				81B7620728E6493B0063029A /* Inter-Thin.ttf */,
+				81B7620828E6493B0063029A /* Inter-Bold.ttf */,
+				81B7620928E6493B0063029A /* Inter-Regular.ttf */,
+				81B7620A28E6493B0063029A /* Inter-ExtraBold.ttf */,
+				81B7620B28E6493B0063029A /* Inter-ExtraLight.ttf */,
+				81B7620C28E6493B0063029A /* Inter-Black.ttf */,
+				81B7620328E6493B0063029A /* Inter-VariableFont_slnt,wght.ttf */,
+				81B7620D28E6493B0063029A /* Inter-SemiBold.ttf */,
+				81B7620E28E6493B0063029A /* OFL.txt */,
+				81B7620F28E6493B0063029A /* README.txt */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		81D0F69228E9C10900C5A8B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				811FD70A28E8FEB4000CCFB9 /* ManagerTask.swift */,
+				81D0F69428E9C29200C5A8B9 /* Task.swift */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		81D0F69328E9C13200C5A8B9 /* Controlers */ = {
+			isa = PBXGroup;
+			children = (
+				81B0968B28D26ED700697C92 /* TaskViewController.swift */,
+				81E35FE528D5120E00C24B27 /* TasksTableViewCell.swift */,
+				8149247C28D915FC0070D4F9 /* Factories.swift */,
+				81D0F69628E9C56300C5A8B9 /* ExtensionViewController.swift */,
+			);
+			path = Controlers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81B0968328D26ED700697C92 /* Todo With Calendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81B0969828D26ED800697C92 /* Build configuration list for PBXNativeTarget "Todo With Calendar" */;
+			buildPhases = (
+				81B0968028D26ED700697C92 /* Sources */,
+				81B0968128D26ED700697C92 /* Frameworks */,
+				81B0968228D26ED700697C92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Todo With Calendar";
+			packageProductDependencies = (
+				813AA8D328EA4017001BFB58 /* Realm */,
+				813AA8D528EA4017001BFB58 /* RealmSwift */,
+			);
+			productName = "Todo With Calendar";
+			productReference = 81B0968428D26ED700697C92 /* Todo With Calendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81B0967C28D26ED700697C92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					81B0968328D26ED700697C92 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 81B0967F28D26ED700697C92 /* Build configuration list for PBXProject "Todo With Calendar" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81B0967B28D26ED700697C92;
+			packageReferences = (
+				813AA8D228EA4017001BFB58 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 81B0968528D26ED700697C92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81B0968328D26ED700697C92 /* Todo With Calendar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81B0968228D26ED700697C92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81B0969428D26ED800697C92 /* LaunchScreen.storyboard in Resources */,
+				81B7621428E6493B0063029A /* Inter-Bold.ttf in Resources */,
+				81B7621128E6493B0063029A /* Inter-Medium.ttf in Resources */,
+				81B0969128D26ED800697C92 /* Assets.xcassets in Resources */,
+				81B7621628E6493B0063029A /* Inter-ExtraBold.ttf in Resources */,
+				81B0968F28D26ED700697C92 /* Main.storyboard in Resources */,
+				81B7621728E6493B0063029A /* Inter-ExtraLight.ttf in Resources */,
+				81B7621A28E6493B0063029A /* OFL.txt in Resources */,
+				81B7621528E6493B0063029A /* Inter-Regular.ttf in Resources */,
+				81B7621828E6493B0063029A /* Inter-Black.ttf in Resources */,
+				81B7621928E6493B0063029A /* Inter-SemiBold.ttf in Resources */,
+				81E35FE828D5120E00C24B27 /* TasksTableViewCell.xib in Resources */,
+				81B7621228E6493B0063029A /* Inter-Light.ttf in Resources */,
+				81B7621328E6493B0063029A /* Inter-Thin.ttf in Resources */,
+				81B7621B28E6493B0063029A /* README.txt in Resources */,
+				81B7621028E6493B0063029A /* Inter-VariableFont_slnt,wght.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81B0968028D26ED700697C92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D0F69528E9C29200C5A8B9 /* Task.swift in Sources */,
+				8149247D28D915FC0070D4F9 /* Factories.swift in Sources */,
+				81E35FE728D5120E00C24B27 /* TasksTableViewCell.swift in Sources */,
+				81B0968C28D26ED700697C92 /* TaskViewController.swift in Sources */,
+				811FD70B28E8FEB4000CCFB9 /* ManagerTask.swift in Sources */,
+				81D0F69728E9C56300C5A8B9 /* ExtensionViewController.swift in Sources */,
+				81B0968828D26ED700697C92 /* AppDelegate.swift in Sources */,
+				81B0968A28D26ED700697C92 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		81B0968D28D26ED700697C92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81B0968E28D26ED700697C92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		81B0969228D26ED800697C92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81B0969328D26ED800697C92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81B0969628D26ED800697C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		81B0969728D26ED800697C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81B0969928D26ED800697C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]" = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R555F6422X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Todo With Calendar/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Todo;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kvm.Todo-With-Calendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		81B0969A28D26ED800697C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]" = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R555F6422X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Todo With Calendar/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Todo;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kvm.Todo-With-Calendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81B0967F28D26ED700697C92 /* Build configuration list for PBXProject "Todo With Calendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81B0969628D26ED800697C92 /* Debug */,
+				81B0969728D26ED800697C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81B0969828D26ED800697C92 /* Build configuration list for PBXNativeTarget "Todo With Calendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81B0969928D26ED800697C92 /* Debug */,
+				81B0969A28D26ED800697C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		813AA8D228EA4017001BFB58 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.30.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		813AA8D328EA4017001BFB58 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 813AA8D228EA4017001BFB58 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		813AA8D528EA4017001BFB58 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 813AA8D228EA4017001BFB58 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 81B0967C28D26ED700697C92 /* Project object */;
+}
