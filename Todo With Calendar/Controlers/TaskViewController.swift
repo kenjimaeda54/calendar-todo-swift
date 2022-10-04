@@ -27,7 +27,7 @@ class TaskViewController: UIViewController {
 		viFinished.layer.cornerRadius = 6
 		let count = config().taskCompleted()
 		labQuantityFinishedTask.text = "\(count)"
-	  let taskCreate = config().getAllTasks().count
+		let taskCreate = config().getAllTasks().count
 		labQuantityCreateTask.text =  "\(taskCreate)"
 	}
 	
@@ -35,11 +35,14 @@ class TaskViewController: UIViewController {
 		super.viewDidAppear(animated)
 		
 		//observer do notification
-		NotificationCenter.default.addObserver(forName: Notification.Name("TaskFinished"), object: nil, queue: nil){[self](notification) in
+		NotificationCenter.default.addObserver(forName: Notification.Name("ObserveTask"), object: nil, queue: nil){[self](notification) in
 			let count = config().taskCompleted()
 			labQuantityFinishedTask.text = "\(count)"
+			let taskCreate = config().getAllTasks().count
+			labQuantityCreateTask.text =  "\(taskCreate)"
+			tableViewTask.reloadData()
 		}
-	
+		
 		navigationController?.navigationBar.barStyle = .black
 	}
 	

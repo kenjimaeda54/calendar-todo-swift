@@ -34,10 +34,9 @@ class TasksTableViewCell: UITableViewCell {
 	
 	
 	func prepareViCheck(_ id: ObjectId) {
-		
-		//disparando uma notificacao para alterar o count
-		NotificationCenter.default.post(name: Notification.Name("TaskFinished"), object: nil)
-
+   
+		//criando notification
+	
 		if ManagerTaks.shared.findOneTask(id).isCheck {
 			let image =   UIImage(named: "check")
 			//peguei a constraint para aumentar altura e largura
@@ -91,6 +90,9 @@ class TasksTableViewCell: UITableViewCell {
 		prepareViCheck(id)
 	}
 	
+	@IBAction func btnRemoveTask(_ sender: Any) {
+		ManagerTaks.shared.taskDelete(id)
+	}
 }
 
 //para remover background button

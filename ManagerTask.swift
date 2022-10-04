@@ -12,7 +12,7 @@ import RealmSwift
 class ManagerTaks {
 	
 	let realm = try! Realm()
-
+	
 	
 	//singleton
 	static var shared: ManagerTaks = ManagerTaks()
@@ -43,6 +43,9 @@ class ManagerTaks {
 			model.isCheck = isCheck
 			model.task = model.task
 		}
+		NotificationCenter.default.post(name: Notification.Name("ObserveTask"), object: nil)
+		
+		
 	}
 	
 	func findOneTask(_ id: ObjectId) -> Task {
@@ -63,5 +66,12 @@ class ManagerTaks {
 		return finished
 	}
 	
+	func taskDelete(_ id:ObjectId)  {
+		let task = findOneTask(id)
+		try!  realm.write{
+			realm.delete(task)
+		}
+		NotificationCenter.default.post(name:  Notification.Name("ObserveTask"), object: nil)
+	}
 }
 
